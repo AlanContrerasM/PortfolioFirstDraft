@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #1a1a1a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container{
+    width: 100%;
+    /* margin: auto;
+    box-shadow: 0 0 20px 4px black,
+                inset 0 0 20px 2px #333;
+    border-left: 2px solid #222;
+    border-right: 2px solid #222; */
+}
+
+header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+header *{
+    display: inline-block;
+}
+
+header div img{
+    height: 15vh;
+}
+
+nav{
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    overflow: auto; /*hidden also works*/
+    margin: 0;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+}
+
+nav ul li{
+    display: grid;    
+}
+nav a{
+    text-decoration: none;
+    padding: .8em;
+    color: white;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    /* background-image: url(images/sprites.gif);
+    background-repeat: no-repeat;
+    background-position: right top; 
+    background-position: right -100px;*/
+    font-size: 1.1em;
+    transition: .3s;
+}
+
+nav a:hover{
+    color: #1fbdd3;
+    background-image: -moz-linear-gradient(to bottom, #1a1a1a, #12121217);
+    background-color: #0e0e0eaa;
+}
+
+nav a:active{
+    color: #1fbdd3;
+}
+
+#greetingSection{
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: ". greeting";
+}
+
+#helloGreeting{
+    margin: 0;
+    grid-area: greeting;
+    font-size: 23vh;
+    color: white;
+}
+
+.invisible{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.floaters{
+    position: absolute;
+}
+
+#floaterDiv{
+    position: relative;
+    display: grid;
+    place-items: center;
+    transition: 2s;
+}
+#floaterControl{
+    cursor: pointer;
+    background-color: #fc5557;
+    width: 80%;
+    height: 60%;
+    border-radius: 30%;
+    display: grid;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 3em;
+    place-items: center;
+    
+}
+
+footer{
+    text-align: center;
+    background-color: #956e51cc;
+    color: white;
+    padding: .4em 0em;
+}
+
+/* for tablets */
+@media only screen and (max-width:1024px){
+    
+}
+
+/* for phones */
+@media only screen and (max-width:768px){
+    #helloGreeting{
+        margin: 0;
+        grid-area: greeting;
+        font-size: 14vh;
+        color: white;
+    }
+    nav{
+        background-color: transparent;
+        border: none;
+        border-top: 3px solid #222 ;
+    }
+
+    nav ul li{
+        display: block;
+        float: none;
+        border-bottom: 2px solid #222;
+        
+    }
+    nav a{
+        color: purple;
+    }
+
+
+}
