@@ -102,9 +102,7 @@ nav a:active{
     opacity: 0;
 }
 
-.floaters{
-    position: absolute;
-}
+
 
 #floaterDiv{
     position: relative;
@@ -115,9 +113,9 @@ nav a:active{
 #floaterControl{
     cursor: pointer;
     background-color: #fc5557;
-    width: 80%;
-    height: 60%;
-    border-radius: 30%;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
     display: grid;
     text-align: center;
     color: white;
@@ -127,9 +125,82 @@ nav a:active{
     
 }
 
+.floaters{
+    position: absolute;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 2s;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+.red{
+    background-color: #fc5557;
+}
+
+.blue{
+    background-color: #1fbdd3;
+}
+
+.green{
+    background-color: #1fd346;
+}
+
+#floaty1{
+    height: 250px;
+    width: 250px;
+    
+}
+
+#floaty2{
+    height: 150px;
+    width: 150px;
+    top: 40px;
+    left: 30px;
+    
+}
+
+#floaty3{
+    height: 200px;
+    width: 200px;
+    bottom: 0;
+    right: 15px;
+    
+
+}
+
+
+#floaty4{
+    height: 175px;
+    width: 175px;
+    right: 0;
+    top: 70px;
+}
+
+#floaty5{
+    height: 140px;
+    width: 140px;
+    left: 0;
+    bottom: 180px;
+
+}
+
+#floaty6{
+    height: 190px;
+    width: 190px;
+    bottom: 10px;
+    left: 100px;
+}
+#floaty7{
+    height: 190px;
+    width: 190px;
+    top: 10px;
+}
 footer{
     text-align: center;
-    background-color: #956e51cc;
     color: white;
     padding: .4em 0em;
 }
