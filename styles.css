@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 html, body{
     height: 100%;
     margin: 0;
@@ -27,6 +32,7 @@ header{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 header *{
@@ -43,26 +49,29 @@ nav{
     text-align: center;
     height: 100%;
     
+    
 }
 
-nav ul{
+nav > ul{
     list-style-type: none;
     overflow: auto; /*hidden also works*/
     margin: 0;
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    position: relative;
+    overflow: visible;
     
 }
 
-nav ul li{
-    display: grid;    
-}
-nav a{
+
+
+nav>ul>li>a{
     text-decoration: none;
     padding: .8em;
     color: white;
     text-align: center;
+    height: 100%;
     display: grid;
     align-items: center;
     /* background-image: url(images/sprites.gif);
@@ -73,13 +82,40 @@ nav a{
     transition: .3s;
 }
 
-nav a:hover{
+nav > ul > li:hover > a{
     color: #1fbdd3;
     background-image: -moz-linear-gradient(to bottom, #1a1a1a, #12121217);
     background-color: #0e0e0eaa;
 }
 
-nav a:active{
+
+
+/*drop downs*/
+ul.drop-menu{
+    /* display: none; hide */
+    color: white;
+    width: 100%;
+    padding: 0;
+    transition: .3s;
+    /* box-shadow: 5px 5px 5px black; */
+}
+
+ul.drop-menu li{
+    display: block;
+}
+
+ul.drop-menu a{
+    display: grid;
+    place-items: center;
+    color: white;
+    text-decoration: none;
+    background-image: -moz-linear-gradient(to bottom, #1fbdd3, #156a75);
+    height: 2em;
+    transition: .3s;
+}
+
+ul.drop-menu a:hover{
+    background-image: -moz-linear-gradient(to bottom, #1a1a1a, #121212);
     color: #1fbdd3;
 }
 
@@ -199,6 +235,76 @@ nav a:active{
     width: 190px;
     top: 10px;
 }
+
+#aboutSection{
+    display: grid;
+    height: 105vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "about cv";
+    color: white;
+    font-weight: 900;
+    font-size: 10vh;
+    margin-top: 30px;
+    gap: 2em;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+#aboutAlan{
+    grid-area: about;
+    transition: .5s;
+    border-radius: 10%;
+    height: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+
+}
+
+#cv{
+    grid-area: cv;
+    transition: .5s;
+    border-radius: 10%;
+    height: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+#aboutAlan:hover, #cv:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#homeImgPro{
+    background-image: url(media/imgPro.JPG);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#homeImgCv{
+    background-image: url(media/cvImg.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 80%;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* easier */
+.center{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
 footer{
     text-align: center;
     color: white;

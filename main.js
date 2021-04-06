@@ -1,3 +1,18 @@
+//event listeners for drop down menu
+const DropDMenus = document.querySelectorAll(".drop-menu")
+
+DropDMenus.forEach((menu)=>{
+    // console.log("creating event drop down");
+    menu.parentElement.addEventListener("mouseover",(e)=>{
+        menu.classList.toggle("invisible");
+    })
+    menu.parentElement.addEventListener("mouseout",(e)=>{
+        menu.classList.toggle("invisible");
+    })
+})
+
+
+
 //creating animation for "Hello, I am Alan!
 const helloGreeting = document.getElementById("helloGreeting");
 
@@ -19,35 +34,32 @@ let typing = setInterval(function () {
 }, 350);
 
 //making the floater appear
-function createFloaterDiv(){
-    const floaterDiv = document.getElementById("floaterDiv");
-    floaterDiv.classList.toggle("invisible");
+function createFloaterDiv() {
+  const floaterDiv = document.getElementById("floaterDiv");
+  floaterDiv.classList.toggle("invisible");
 }
 
 //easter egg on floaterDiv, need to press. Maybe you'll find it, maybe not!
 
-function floaterClick(){
-
-    //dissappearing the big floaterDiv
-    const floaterDiv = document.getElementById("floaterDiv");
-    floaterDiv.addEventListener("click", (e)=>{
-        e.target.classList.toggle("invisible");
-        createFloaters();
-    })
-
+function floaterClick() {
+  //dissappearing the big floaterDiv
+  const floaterDiv = document.getElementById("floaterDiv");
+  floaterDiv.addEventListener("click", (e) => {
+    e.target.classList.toggle("invisible");
+    createFloaters();
+  });
 }
 
-function createFloaters(){
-    //making the floaters appear with a delay for each one
+function createFloaters() {
+  //making the floaters appear with a delay for each one
 
-    const floaters = document.querySelectorAll(".floaters");
+  const floaters = document.querySelectorAll(".floaters");
 
-    floaters.forEach((floaty, index)=>{
-        console.log(index);
-        setTimeout(function(){
-            console.log("creating", floaty)
-    floaty.classList.toggle("invisible");
-        }, 1500 * index);
-    })
+  floaters.forEach((floaty, index) => {
+    console.log(index);
+    setTimeout(function () {
+      console.log("creating", floaty);
+      floaty.classList.toggle("invisible");
+    }, 1500 * index);
+  });
 }
-

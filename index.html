@@ -18,8 +18,16 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+              <ul class="drop-menu invisible">
+                <li><a href="about.html">Alan</a></li>
+                <li><a href="cv.html">CV</a></li>
+              </ul>
+            </li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -28,19 +36,32 @@
 
       <main>
         <section id="greetingSection">
-           <div id="floaterDiv" class="invisible">
-             <div class="floaters blue invisible" id="floaty1">/*I am*/</div>
-             <div class="floaters red invisible" id="floaty2">/*dinamic*/</div>
-             <div class="floaters green invisible" id="floaty3">/*funny*/</div>
-             <div class="floaters red invisible" id="floaty4">/*A sport aficionado*/</div>
-             <div class="floaters green invisible" id="floaty5">/*dorky*/</div>
-             <div class="floaters red invisible" id="floaty6">/*tenacious*/</div>
-             <div class="floaters green invisible" id="floaty7">/*Dilligent*/</div>
+          <div id="floaterDiv" class="invisible">
+            <div class="floaters blue invisible" id="floaty1">/*I am*/</div>
+            <div class="floaters red invisible" id="floaty2">/*dynamic*/</div>
+            <div class="floaters green invisible" id="floaty3">/*funny*/</div>
+            <div class="floaters red invisible" id="floaty4">
+              /*A sport aficionado*/
+            </div>
+            <div class="floaters green invisible" id="floaty5">/*dorky*/</div>
+            <div class="floaters red invisible" id="floaty6">/*tenacious*/</div>
+            <div class="floaters green invisible" id="floaty7">
+              /*Dilligent*/
+            </div>
             <div id="floaterControl">Nice meeting you!</div>
           </div>
           <h1 id="helloGreeting"></h1>
         </section>
-        <section id="aboutSection"></section>
+        <section id="aboutSection">
+          <a id="aboutAlan" class="center blue" href="about.html">
+              <div>Who am I?</div>
+              <div id="homeImgPro" alt="img of Alan"></div>
+          </a>
+          <a id="cv" class="center red" href="cv.html">
+            <div>The boring</div>
+            <div id="homeImgCv" alt="img of CV"></div>
+        </a>
+        </section>
         <section id="projectSection"></section>
         <section id="contactSection"></section>
       </main>
