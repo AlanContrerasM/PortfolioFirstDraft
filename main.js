@@ -55,11 +55,14 @@ function createFloaters() {
 
   const floaters = document.querySelectorAll(".floaters");
 
+  //loop for
   floaters.forEach((floaty, index) => {
-    console.log(index);
+    // console.log(index);
     setTimeout(function () {
-      console.log("creating", floaty);
+    //   console.log("creating", floaty);
       floaty.classList.toggle("invisible");
     }, 1500 * index);
   });
 }
+
+

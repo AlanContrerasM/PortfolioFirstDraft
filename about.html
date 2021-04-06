@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Portfolio Alan</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link rel="icon" href="media/icon.jpg" type="image/ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header>
+        <div>
+          <a href="index.html"
+            ><img src="media/AlanContreras.gif" alt="AlanContreras logo"
+          /></a>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about.html">About</a>
+              <ul class="drop-menu invisible">
+                <li><a href="about.html">Alan</a></li>
+                <li><a href="cv.html">CV</a></li>
+              </ul>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="aboutGreeting">
+          <h1 id="helloGreeting"></h1>
+          <div id="techFloaterDiv">
+            <div class="techFloater center red invisible" id="js">JS</div>
+            <div class="techFloater center blue invisible" id="html">HTML</div>
+            <div class="techFloater center blue invisible" id="css">CSS</div>
+            <div class="techFloater center green invisible" id="react">
+              REACT
+            </div>
+            <div class="techFloater center blue invisible" id="sql">SQL</div>
+            <div class="techFloater center red invisible" id="csh">C#</div>
+            <div class="techFloater center red invisible" id="java">JAVA</div>
+            <div class="techFloater center green invisible" id="mongo">
+              MONGO
+            </div>
+            <div class="techFloater center green invisible" id="node">NODE</div>
+          </div>
+        </section>
+        <div id="aboutImgSection">
+            <!-- card images, no biggie,  -->
+          <div class="card-container">
+            <div class="card" id="card1" template="3fr 1fr 1fr 1fr 1fr"></div>
+            <div class="card" id="card2" template="1fr 3fr 1fr 1fr 1fr"></div>
+            <div class="card" id="card3" template="1fr 1fr 3fr 1fr 1fr"></div>
+            <div class="card" id="card4" template="1fr 1fr 1fr 3fr 1fr"></div>
+            <div class="card" id="card5" template="1fr 1fr 1fr 1fr 3fr"></div>
+          </div>
+          <div id="img-container">
+            <div class="myImgs" id="aboutImg1" alt="Professional"></div>
+            <div class="myImgs" id="aboutImg2" alt="Tenacious"></div>
+            <div class="myImgs" id="aboutImg3" alt="Adventurous"></div>
+            <div class="myImgs" id="aboutImg4" alt="Outgoing"></div>
+            <div class="myImgs" id="aboutImg5" alt="Teamwork"></div>
+
+            <!-- absolute, out of the flow -->
+            <a id="last" >&#10094;</a>
+            <a id="next" >&#10095;</a>
+
+            <div class="caption-container center">
+              <p id="caption"></p>
+            </div>
+          </div>
+
+          
+        </div>
+      </main>
+
+      <footer>Copyright &copy;2021 Author: Alan Contreras 300330244</footer>
+    </div>
+
+    <script src="about.js"></script>
+  </body>
+</html>
