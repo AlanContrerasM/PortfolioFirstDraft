@@ -1,3 +1,5 @@
+//kept everything semi-simple no modules, factory functions for cards, meh..., webpack, node, etc.
+
 //event listeners for drop down menu
 const DropDMenus = document.querySelectorAll(".drop-menu")
 
@@ -31,7 +33,7 @@ let typing = setInterval(function () {
     floaterClick();
     clearInterval(typing);
   }
-}, 350);
+}, 250);
 
 //making the floater appear
 function createFloaterDiv() {
@@ -61,7 +63,7 @@ function createFloaters() {
     setTimeout(function () {
     //   console.log("creating", floaty);
       floaty.classList.toggle("invisible");
-    }, 1500 * index);
+    }, 1200 * index);
   });
 }
 

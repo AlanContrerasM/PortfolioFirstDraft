@@ -288,6 +288,7 @@ ul.drop-menu a:hover {
   display: grid;
   place-items: center;
   text-align: center;
+  color: white;
 }
 
 #extraSection {
@@ -406,11 +407,11 @@ footer {
   box-shadow: 0 0 20px black;
 }
 
-#img-container{
-    position: relative;
-    max-height: 100%;
-    display: grid;
-    grid-template-rows: 85% 15%;
+#img-container {
+  position: relative;
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: 85% 15%;
 }
 
 .myImgs {
@@ -420,56 +421,56 @@ footer {
   background-repeat: no-repeat;
 }
 
-#aboutImg1{
-    background-image: url("media/imgPro.JPG");
+#aboutImg1 {
+  background-image: url("media/imgPro.JPG");
 }
-#aboutImg2{
-    background-image: url("media/img1.jpg");
+#aboutImg2 {
+  background-image: url("media/img1.jpg");
 }
-#aboutImg3{
-    background-image: url("media/img2.jpg");
+#aboutImg3 {
+  background-image: url("media/img2.jpg");
 }
-#aboutImg4{
-    background-image: url("media/img3.JPG");
+#aboutImg4 {
+  background-image: url("media/img3.JPG");
 }
-#aboutImg5{
-    background-image: url("media/img4.jpg");
+#aboutImg5 {
+  background-image: url("media/img4.jpg");
 }
 
-.card-container{
-    max-height: 100%;
-    display: grid;
-    grid-template-rows: repeat(5,1fr);
-    transition: .3s;
+.card-container {
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  transition: 0.3s;
 }
 .card {
-    display: block;
-    cursor: pointer;
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .7;
-  }
+  display: block;
+  cursor: pointer;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
 
-  .card:hover{
-    opacity:1;
-  }
-  
-  #card1{
-      background-image: url("media/imgPro.JPG");
-  }
-  #card2{
-      background-image: url("media/img1.jpg");
-  }
-  #card3{
-      background-image: url("media/img2.jpg");
-  }
-  #card4{
-      background-image: url("media/img3.JPG");
-  }
-  #card5{
-      background-image: url("media/img4.jpg");
-  }
+.card:hover {
+  opacity: 1;
+}
+
+#card1 {
+  background-image: url("media/imgPro.JPG");
+}
+#card2 {
+  background-image: url("media/img1.jpg");
+}
+#card3 {
+  background-image: url("media/img2.jpg");
+}
+#card4 {
+  background-image: url("media/img3.JPG");
+}
+#card5 {
+  background-image: url("media/img4.jpg");
+}
 
 /* Next & previous buttons */
 #last,
@@ -481,7 +482,7 @@ footer {
   padding: 16px;
   margin-top: -50px;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -505,11 +506,143 @@ footer {
   color: white;
 }
 
-#caption{
-    font-weight: bolder;
-    font-size: 2em;
+#caption {
+  font-weight: bolder;
+  font-size: 2em;
 }
 
+/*projects page*/
+
+#projectsImgSection {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 20px black;
+}
+
+#project-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  position: relative;
+  max-height: 100%;
+}
+
+.myProjects {
+  display: none;
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+#project1 {
+  background-image: url("media/todo.jpg");
+}
+#project2 {
+  background-image: url("media/library.jpg");
+}
+#project3 {
+  background-image: url("media/restaurant.jpg");
+}
+#project4 {
+  background-image: url("media/tictactoe.jpg");
+}
+#project5 {
+  background-image: url("media/calculator.jpg");
+}
+#project6 {
+  background-image: url("media/rockpaper.jpg");
+}
+#project7 {
+  background-image: url("media/etch.jpg");
+}
+
+.card-containerProject {
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  transition: 0.3s;
+  gap: 1em;
+  box-shadow: inset 0 0 10px 10px black;
+}
+.cardP {
+  display: block;
+  cursor: pointer;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: solid 2px #1fbdd3;
+  opacity: 0.7;
+}
+
+.cardP:hover {
+  opacity: 1;
+}
+
+#cardP1 {
+  background-image: url("media/todo.jpg");
+}
+#cardP2 {
+  background-image: url("media/library.jpg");
+}
+#cardP3 {
+  background-image: url("media/restaurant.jpg");
+}
+#cardP4 {
+  background-image: url("media/tictactoe.jpg");
+}
+#cardP5 {
+  background-image: url("media/calculator.jpg");
+}
+#cardP6 {
+  background-image: url("media/rockpaper.jpg");
+}
+#cardP7 {
+  background-image: url("media/etch.jpg");
+}
+
+#screen {
+  position: absolute;
+  background-color: #111;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+.caption-containerProject {
+  position: absolute;
+  text-align: left;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 0 30px;
+}
+
+#captionP {
+  font-weight: bolder;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+#captionP h1{
+    text-align: center;
+}
+#visitP {
+  cursor: pointer;
+  height: 40%;
+  padding: 0 30px;
+  font-weight: bolder;
+  font-size: 2em;
+  background-color: #1fbdd3;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+#visitP:hover {
+  transform: scale(1.2);
+}
 
 /* cv page */
 #pdfObject {

@@ -106,19 +106,4 @@ function showImg(n) {
     })
 
 
-
-//   var imgs = document.getElementsByClassName("myImgs");
-//   var dots = document.getElementsByClassName("demo");
-//   var captionText = document.getElementById("caption");
-//   if (n > imgs.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = imgs.length}
-//   for (i = 0; i < imgs.length; i++) {
-//     imgs[i].style.display = "none";
-//   }
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   imgs[slideIndex-1].style.display = "block";
-//   dots[slideIndex-1].className += " active";
-//   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
