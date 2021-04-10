@@ -35,19 +35,118 @@
       </header>
 
       <main>
-        <div><h1 id="projectsTitle" class="center">
-            Hire me? <br>Pretty Please!
-        </h1></div>
-        <div id="contactSection">
-            <!-- just a form -->
+        <div>
+          <h1 id="projectsTitle" class="center">
+            Hire me? <br />Pretty Please!<br>Not really, just proof of concept
+          </h1>
+        </div>
+        <div id="contactPageSection">
+          <!-- just a form -->
+          <form >
+            <fieldset>
+                <legend>Send offer, why wait?</legend>
 
-          
+                <div>
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="nameForm"
+                      placeholder="Name"
+                      class="contactFormEl"
+                      required
+                    />
+                  </div>
+                  <hr>
+    
+                  <div>
+                    <label for="company">Company</label>
+                    <input
+                      type="text"
+                      name="company"
+                      id="company"
+                      class="contactFormEl"
+                      placeholder="Your company"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label >Size of Company</label>
+                    <select name="companyType" id="companyType" class="contactFormEl" required >
+                        <option value="FAANG">FAANG</option>
+                        <option value="Fortune">Fortune</option>
+                        <option value="Big">Big</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Small">Small</option>
+                    </select>
+                </div>
+                <hr>
+                  <div>
+                    <label for="position">Position offered</label>
+                    <input
+                      type="text"
+                      name="position"
+                      id="position"
+                      class="contactFormEl"
+                      placeholder="Ex. Full-Stack Dev"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label for="salary">Salary (thousands): <span id="salarySpan"></span></label>
+                    <input type="range" name="salary" id="salary" min="0" class="contactFormEl" max="150" value="50" step="10" required>
+                </div>
+                <hr>
+                  <div>
+                    <label for="phone">Phone Number</label>
+                    <input
+                      type="text"
+                      name="phone"
+                      class="contactFormEl"
+                      id="phone"
+                      placeholder="Phone Number"
+                      required
+                    />
+                  </div>
+    
+                  <div>
+                    <label for="email">E-mail*</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="contactFormEl"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+                  <hr>
+                  <div>
+                    <label for="date">Start date*</label>
+                    <input type="date" name="date" id="dateForm" class="contactFormEl">
+                </div>
+
+                
+                <div>
+                    <label for="comments">Comments:*</label>
+                    <textarea name="comments" id="comments" rows="3" class="contactFormEl" ></textarea>
+                </div>
+            </fieldset>
+
+            <div id="buttons" class="formButtons">
+                <button type="submit">
+                    Submit
+                </button>
+                <button type="reset">
+                    Cancel
+                </button>
+          </form>
         </div>
       </main>
 
       <footer>Copyright &copy;2021 Author: Alan Contreras 300330244</footer>
     </div>
 
-    <script src="projects.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

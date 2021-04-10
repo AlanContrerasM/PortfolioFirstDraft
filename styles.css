@@ -626,8 +626,8 @@ footer {
   text-align: justify;
 }
 
-#captionP h1{
-    text-align: center;
+#captionP h1 {
+  text-align: center;
 }
 #visitP {
   cursor: pointer;
@@ -652,6 +652,63 @@ footer {
   margin: 0 5%;
 }
 
+/* contact page */
+
+#contactPageSection {
+  border: 5px solid #07606c;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px 20px;
+  width: 90%;
+  margin: auto;
+  gap: 30px;
+  color: white;
+}
+
+.alertContainer {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: rgba(83, 83, 83, 0.467);
+  width: 100%;
+}
+
+#alertInfo{
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 2em;
+    padding: 40px 0;
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+#closeButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#closeButton:hover{
+    color: #1fbdd3;
+  background-image: -moz-linear-gradient(to bottom, #1a1a1a, #12121217);
+}
+fieldset {
+  height: 90%;
+}
+
+fieldset > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px 5px;
+}
+
+.formButtons {
+  margin-top: 10px;
+  text-align: center;
+}
 /* for tablets */
 @media only screen and (max-width: 1024px) {
 }
